@@ -5,7 +5,7 @@ class First {
         fs.readFile('input', 'utf8', (err, data) => {
             if (err) throw err;
             
-            let numbers: number[] = [];
+            const numbers: number[] = [];
 
             // convert to numbers
             for (let number of data.split('\n')) {
@@ -31,7 +31,7 @@ class First {
     private partTwo(numbers: number[], target: number) {
         for (let i = 0; i < numbers.length; i++) {
             const rest = target - numbers[i];
-            let firstMultiplication = this.partOne(numbers.slice(i+1, numbers.length), rest);
+            const firstMultiplication = this.partOne(numbers.slice(i+1, numbers.length), rest);
 
             if (firstMultiplication) {
                 return numbers[i] * firstMultiplication;
