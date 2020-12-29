@@ -46,8 +46,6 @@ class Second {
         let valids: number = 0;
 
         for (let line of lines) {
-
-
             if ((line.password[line.first-1] === line.letter && line.password[line.second-1] !== line.letter) 
                 ||
                 line.password[line.first-1] !== line.letter && line.password[line.second-1] === line.letter) {
