@@ -17,7 +17,7 @@ class First {
         });
     }
 
-    private partOne(numbers: number[], target: number) {
+    private partOne(numbers: number[], target: number): number {
         for (let number of numbers) {
             const rest = target - number;
             if (numbers.includes(rest)) {
@@ -28,7 +28,7 @@ class First {
         return 0;
     }
 
-    private partTwo(numbers: number[], target: number) {
+    private partTwo(numbers: number[], target: number): number {
         for (let i = 0; i < numbers.length; i++) {
             const rest = target - numbers[i];
             const firstMultiplication = this.partOne(numbers.slice(i+1, numbers.length), rest);
