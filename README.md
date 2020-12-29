@@ -1,8 +1,12 @@
 # advent-of-code-2020
 
-done in typescript.
+Done in typescript.
 
+```
 npm install -g ts-node
 npm install -g typescript
+npm install @types/node
 
-ts-node file.ts
+cd 1
+ts-node solution.ts
+```
